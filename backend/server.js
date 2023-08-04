@@ -45,7 +45,7 @@ app.use(
         store: sessionStore,
         cookie: {
             sameSite: 'none',
-            secure: false,
+            secure: true,
             httpOnly: true,
             expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000) // 1 year in milliseconds
         }
