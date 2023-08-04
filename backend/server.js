@@ -36,6 +36,8 @@ const sessionStore = new SequelizeStore({
     db: sequelize
 });
 
+app.set("trust proxy", 1);
+
 // Session middleware
 app.use(
     session({
