@@ -11,7 +11,7 @@ import LoginForm from "../LoginForm/LoginForm";
 import Ranking from "../Ranking/Ranking";
 import Profile from "../Profile/Profile";
 import Loading from "../Loading/Loading";
-// import ChatRoom from "../ChatRoom/ChatRoom";
+import ChatRoom from "../ChatRoom/ChatRoom";
 import Discussions from "../Discussions/Discussions";
 import PostView from "../PostView/PostView";
 
@@ -54,7 +54,7 @@ export default function App() {
                         path="/profile/:username"
                         element={requireAuth(<Profile />)}
                     />
-                    {/* <Route path="/chat" element={requireAuth(<ChatRoom />)} /> */}
+                    <Route path="/chat" element={requireAuth(<ChatRoom />)} />
                 </Routes>
             </BrowserRouter>
         </div>
