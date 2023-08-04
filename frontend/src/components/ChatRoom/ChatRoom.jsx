@@ -9,7 +9,7 @@ import Chat from "../Chat/Chat";
 import { setLoading } from "../../redux/loading";
 import { NetworkError, ServerError } from "../../utils";
 
-const socket = io.connect("https://stock-zone-back.onrender.com:3001");
+const socket = io.connect("https://stock-zone-back.onrender.com");
 
 export default function ChatRoom() {
     const user = useSelector((state) => state.user);
