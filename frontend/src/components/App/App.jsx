@@ -54,7 +54,7 @@ export default function App() {
                         path="/profile/:username"
                         element={requireAuth(<Profile />)}
                     />
-                    <Route path="/chat" element={requireAuth(<ChatRoom />)} />
+                    {/* <Route path="/chat" element={requireAuth(<ChatRoom />)} /> */}
                 </Routes>
             </BrowserRouter>
         </div>
